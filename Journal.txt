@@ -1,0 +1,22 @@
+07/10/2022:
+Exercice sur les etoiles. Explication de nested loop. 
+
+itération : exécution répétée d'une série d'instructions 
+en utilisant soit un appel de fonction récursive, soit une boucle
+
+Nested loop : Nested loop means a loop statement inside another loop statement
+
+08/10/2022
+
+Exercice basic pour se remettre dedans : 
+https://pynative.com/python-basic-exercise-for-beginners/
+pynative exo.py 
+
+Quizz à revoir! Continuer exo sur les loops.
+
+09/10/2022
+Ceaser Cypher reflexion 
+Chapitre 14 version control!
+Installation de GIT. Initialisation. 
+
+Rdv avec Luis Mercredi!

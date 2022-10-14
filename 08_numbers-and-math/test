@@ -1,0 +1,119 @@
+# hunger = "giant"
+
+# if hunger == "big":
+#     print("Eat the pizza")
+# elif hunger == "small":
+#     print("Eat the apple")
+# elif hunger == "medium" :
+#     print("eat french fries")
+# elif hunger == "giant":
+#     print("jeune")
+# else:
+#     print("Don't eat anything")
+
+# number = 11.3
+# if number % 2 == 0:
+#     print("divisible by two")
+# elif number % 4 == 0:
+#     print("divisible by four")
+# else:
+#     print("not divisible by two or four")
+
+# secret = "2349H30023388281E3299371l1l3094842O0333322883P43323I23233Z343Z232A"
+# solution = ""
+
+# for char in secret:
+#     if char.isalpha():
+#         solution += char
+#         char.capitalize()
+
+# print(solution)
+
+# for char in "alternating caps":
+#     char.lower
+#     char.capitalize()
+#     print(char)
+
+
+# word = "alternating caps"
+# i=0
+# new_list =""
+
+# for char in word:
+#     if i%1:
+#         modified=char.capitalize
+#         new_list.append(modified)
+#     elif i%2:
+#         new_list.append(char)
+#     i+=1
+#     print(new_list)
+
+# word = "alternating caps"
+# i = 1
+
+# for char in word : 
+#     i += 1
+#     if i%0:
+#         modified=char.capitalize
+#     print(word)
+
+# initializing string
+# word = "alternating caps"
+ 
+
+
+# # Using upper() + lower() + loop
+# # Alternate cases in String
+# x = ""
+# for char in range(len(word)):
+#     if not char % 2 :
+#        x = x + word[char].upper()
+#     else:
+#        x = x + word[char].lower()
+ 
+# # printing xult
+# print(str(x))
+
+# word = "alternating caps"
+# i = 1
+# pouet = ""
+
+# for char in word : 
+#     if i == 0 :
+#     word.capitalize()
+#     elseif 
+#        i == i + 1 
+#     word.lower()
+#     print(pouet)
+
+# word = "alternating caps"
+# i = 1
+# new_word = ""
+
+# for char in word : 
+#     if i % 2 ==0:
+#        char.capitalize()
+#        new_word+=char
+#     else: 
+       
+#        new_word+=char
+#     i+=1
+# print(new_word)
+
+# word = "alternating caps"
+# i = 1
+# new_word = ""
+
+# for char in word : 
+#     if i % 2 ==0:
+       
+#        new_word+=char.capitalize()
+#     else: 
+       
+#        new_word+=char
+#     i+=1
+# print(new_word)
+
+for n in range(100):
+    if n % 2 == 0:
+        print(n)
