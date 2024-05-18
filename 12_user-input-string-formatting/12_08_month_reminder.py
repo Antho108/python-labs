@@ -9,7 +9,7 @@
 user = int(input("Choice a number"))
 number_list = [1,2,3,4,5,6,7,8,9,10,11,12]
 month_list = ["January", "February"]
-print(month_list[0])
+# print(month_list[0])
 
 
 while user not in number_list:

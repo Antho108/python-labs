@@ -1,13 +1,13 @@
 # Write a Hangman game in Python.
-# Users should have a limited amount of attempts to guess a pre-defined word.
+# Users should have a limited amount of attempts to guess a pre-defined solution.
 # Print feedback to the user when they made a guess,
 # and keep track of and communicate their remaining attempts.
 
-# Hard-code a word that needs to be guessed in the script
+# Hard-code a solution that needs to be guessed in the script
 
 # Print an explanation to the user
 
-# Display the word as a sequence of blanks, e.g. "_ _ _ _ _" for "hello"
+# Display the solution as a sequence of blanks, e.g. "_ _ _ _ _" for "hello"
 
 # // Ask for user input
 
@@ -17,38 +17,69 @@
 
 # Keep asking them for their guess until they won or lost
 
-# When they find a correct character, display the blank with the word
+# When they find a correct character, display the blank with the solution
 #   filled in, e.g.: "_ e _ _ _" if they guessed "e" from "hello"
 
-# Display a winning message and the full word if they win
+# Display a winning message and the full solution if they win
 
 # Display a losing message and quit the game if they don't make it
 #  look function enumerate
 
+# Welcome message 
+print(" Welcome to my special Hangman games ")
 
-attemps = 0 
-word_final = "Faridabad"
-user_input = None 
+# Player's name
+user_name = input("Display your name ")
 
-print(" Welcome to my special Hangman games") # Welcome message 
-user_name = input("Enter your name ")
+# Implant the rules and showing then
+rules = "Try to guess a name. You have only 7 attempts."
+print(rules, "Good luck", user_name)
 
-print(f" You have only 5 attemps to find the good names, enter only one character, good luck {user_name} ") # Print an explanation to the user
-
-print("_________")
-
-while user_input != "Faridabad ": 
-    user_input = input("Find the correct character and display the name. \n")[0]
-    attemps += 1
-    print(user_input[0])
-    if user_input == word_final : 
-        print("You win, you are a champion ")
-        exit()
-print(user_input[0])
+solution = "God" # Final word to find
+attempts = 7 # Declaration variable of attempts number
+guess = ""
+screen = ""
 
 
 
-# x = ('apple', 'banane', 'popo')
-# y = enumerate(x)
+# Displaying screen with the "_" but i don't know how to add a letter her
+for char in solution : 
+    screen = screen + "_"
+print(screen)
 
-# print(list(y))
+
+# I want to write here a programm then to check if the letter is inside my solution. If it not inside 
+# i would like the programm to start to draw a hangman.
+
+letter_find = "" # Letter find by the player
+
+
+# Counting the number of attemtps. When attempts = game over
+while attempts > 0:
+    # Asking player to enter character
+    guess = input(f'{user_name} guess a character: {screen} ')
+    print(guess)
+
+    if guess in solution: 
+        letter_find = letter_find + guess
+        print("Good letter, continue", screen, letter_find)
+
+        if letter_find == "God":
+            print("you win")
+            exit()
+
+    else:
+        attempts = attempts - 1
+        print(f'wrong letter, {user_name}, try again!, you stil have : {attempts}')
+
+if attempts == 0: 
+    print(f'Games over, {user_name} you will do better next time')
+
+
+
+
+
+    
+
+
+

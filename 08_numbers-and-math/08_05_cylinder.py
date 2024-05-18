@@ -1,20 +1,19 @@
 # Write the necessary code calculate the volume and surface area
 # of a cylinder with a radius of 3.14 and a height of 5.
 # Print out the result.
-from cmath import pi
+from math import pi
 
+r = 3.14
+height = 5
 
-r = 3.1
-height = 5 
-bair = (pi) * r * r 
-volume = bair * 5
-# surface A = 2 x π x r² + 2 x π x r x h 
-surface = (2 * (pi) * 3.1*3*1) + (2 * (pi) * 3.1 * 5)   
-bair = round(bair, 2)
+base_area = pi * r ** 2
+volume = base_area * height
 volume = round(volume, 2)
-surface = round(surface, 2)
-print(bair, volume, surface)
 
+# surface A = 2πr² + 2πrh
+surface_area = 2 * pi * r**2 + 2 * pi * r * height
+surface_area = round(surface_area, 2)
 
-
-   
+print("Base area:", round(base_area, 2))
+print("Volume:", volume)
+print("Surface area:", surface_area)

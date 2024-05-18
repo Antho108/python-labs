@@ -2,10 +2,10 @@
 # are .pdf files, and which aren't.
 # Call the method on each file string and print() Python's response.
 
-# file_1 = "operators.pdf"
-# file_2 = "snowfall.jpg"
-# file_3 = "uncle-joes-wedding.doc"
-# file_4 = "invitation.pdf"
+file_1 = "operators.pdf"
+file_2 = "snowfall.jpg"
+file_3 = "uncle-joes-wedding.doc"
+file_4 = "invitation.pdf"
 
 # files = [file_1, file_2, file_3, file_4]
 # for x in files : 
@@ -16,13 +16,13 @@
 
 
 file_1 = "operators.pdf"
-files = [file_1]
+files = [file_1, file_2, file_3, file_4]
 
 for x in files : 
     if x.endswith(".pdf"):
-        print("goodjob")
+        print(f' {x} is PDF')
     else: 
-        print("wrongfile")
+        print(f' {x} is not PDF')
 
 # Collect user files
 # NEW --> Convert user input to lowercase

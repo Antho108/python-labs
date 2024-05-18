@@ -22,5 +22,12 @@ for x in range(1,1001):
        prime_list.append(x)
 print(prime_list)
 
-
+# num = 1000
+# for i in range(1,num+1):
+#     is_prime = True
+#     for j in range(2,i):
+#         if i % j == 0 : 
+#             is_prime = False
+#     if is_prime:
+#         print(i)
 

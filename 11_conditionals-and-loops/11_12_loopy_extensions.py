@@ -12,6 +12,7 @@ list_1=["document.doc","file.txt","video.mkv", "file2.pdf"]
 Flag = False
 ext = ""
 pdf_docs = []
+
 for doc in list_1: 
     Flag = False
     ext = ""
@@ -25,6 +26,7 @@ for doc in list_1:
             ext += char
     if ext == ".pdf":
         pdf_docs.append(doc) 
+
 
 print(f"the pdf documents are {pdf_docs}")
     

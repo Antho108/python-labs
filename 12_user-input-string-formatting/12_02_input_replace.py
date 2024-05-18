@@ -7,11 +7,11 @@
 
 
 user = input("say a word ")
-symbol = str(input("Enter a symbol "))
+symbol = input("Enter a symbol ")
 
 print(f"your message is {user} and your symbol is {symbol}")
 
-new_user= user.replace({symbol}, 'm')
+new_user= user.replace(symbol, 'm')
 print(new_user)
 
 

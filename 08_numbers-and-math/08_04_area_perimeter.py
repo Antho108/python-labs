@@ -9,6 +9,6 @@ height = 6.4
 air = largeur * height 
 print(f"the area is {air}")
 
-perimeter = 2 * (largeur * height)  
+perimeter = 2 * (largeur + height)  
 # print(f"The perimeter is {perimeter}")
 print(f"The perimeter is {perimeter} and the area is {air}") 

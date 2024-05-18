@@ -3,14 +3,23 @@
 # exit the loop and print the number to the console.
 
 
-user = int(input("Enter a numberbetween 0 and 1,000,000,000."))
+# user = int(input("Enter a numberbetween 0 and 1,000,000,000."))
+# num = None
+
+# while num != user:
+#     num = True
+#     print(num)
+#     break
+# print(user)
+
+
+user = int(input("Enter a number between 0 and 1,000,000,000: "))
 num = None
 
 while num != user:
-    num = True
-    print(num)
-    break
-print(user)
+    num = int(input("Guess the number: "))
+
+print("Congratulations! You found the number:", num)
 
 
 
